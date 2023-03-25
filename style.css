@@ -4,6 +4,7 @@
 
 body {
 	margin: 0;
+
 	font-family: Arial, sans-serif;
 }
 
@@ -56,6 +57,7 @@ main {
 h1 {
 	font-size: 36px;
 	margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 p {
@@ -68,6 +70,13 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    background-image: url ( "/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
 }
 
 /* Make the menu responsive */
