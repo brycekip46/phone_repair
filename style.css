@@ -8,6 +8,7 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+
 header {
 	background-color: black;
 	position: fixed;
@@ -84,6 +85,12 @@ p {
     text-align: justify;
     font-family: Arial, sans-serif;
     font-size: 18px;
+}
+form {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    opacity: 0.8;
 }
 
 ul#menu {
