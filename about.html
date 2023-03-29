@@ -6,6 +6,58 @@
     <title>3 Brothers - Phone Repair Services</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+        form {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"]{
+            float: right;
+            width: 100px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: ridge;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            width: 45%;
+        }
+
+        .form-group input[type="text"] {
+            width: 45%;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .form-group label,
+            .form-group input[type="text"] {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
         .allcolumns {
             display: flex;
             flex-wrap: wrap;
@@ -16,16 +68,19 @@
             flex: 1;
             padding: 20px;
         }
+
         h1 {
-    width: 100%;
-    text-align: center;
-  }
-  h1{
-    text-decoration: none;
-  }
-  h2{
-    text-align: center;
-  }
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -46,33 +101,61 @@
         <div class="container">
             <div class="allcolumns">
                 <h1 style="font-size: 35;">GET IN TOUCH</h1>
-            <div class="column">
-                <h2><img src="phone.png" alt="call us" width="100" height=" 100"></h2>
-                <p>This is the content of column 1.</p>
+                <div class="column">
+                    <h2><img src="phone.png" alt="call us" width="100" height=" 100"></h2>
+                    <p>This is the content of column 1.</p>
+                </div>
+
+                <div class="column">
+
+                    <h2 style="text-align: center;"><img src="location.jpg" alt="Locate us" width=" 100" height="100">
+                    </h2>
+                    <p>This is the content of column 2.</p>
+                </div>
+
+                <div class="column">
+                    <h2><img src="email.jpg" alt="Email us" width="100" height="100"></h2>
+                    <p>This is the content of column 3.</p>
+                </div>
+
             </div>
 
-            <div class="column">
-
-                <h2 style="text-align: center;"><img src="location.jpg" alt="Locate us" width=" 100" height="100"></h2>
-                <p>This is the content of column 2.</p>
-            </div>
-
-            <div class="column">
-                <h2><img src="email.jpg" alt="Email us" width="100" height="100"></h2>
-                <p>This is the content of column 3.</p>
-            </div>
-
-            </div>
             <h1 style="font-size: 30;"> MESSAGE US</h1>
 
+            <form action="enquire.html" method="POST">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="write">Write to us:</label>
+                    <textarea id="MESSAGE" name="MESSAGE" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
             <footer>
-        <p>&copy; 2023 @3 Brothers We've got you covered</p>
-    </footer>
+                <p>&copy; 2023 @3 Brothers We've got you covered</p>
+            </footer>
 
         </div>
     </main>
 
-    
+
 </body>
 
 </html>
