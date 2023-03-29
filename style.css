@@ -44,6 +44,9 @@ nav a {
 nav a:hover {
 	background-color: gray;
 }
+nav a::after{
+    background-color: blanchedalmond;
+}
 
 main {
 	margin-top: 70px;
@@ -78,9 +81,6 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-    background-image: url ( "background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     text-align: justify;
     font-family: Arial, sans-serif;
