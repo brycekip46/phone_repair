@@ -3,10 +3,12 @@
 }
 
 body {
-	margin: 0;
-
-	font-family: Arial, sans-serif;
-}
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
 
 
 header {
@@ -53,10 +55,12 @@ main {
 }
 
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 .center{
     display: block;
     margin-left: auto;
@@ -139,6 +143,16 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
+footer {
+    background: linear-gradient(to right, #000a11, #1f252c);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
 
 @media only screen and (max-width: 768px) {
     /* Make the menu full-width and vertical */
